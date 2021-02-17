@@ -1,6 +1,12 @@
-function Greeting() {
-  let isMorning = new Date().getHours() < 12;
-  return isMorning ? <h3>Good Morning</h3> : <h3>Good Evening</h3>;
-}
+import React from "react";
 
-export default Greeting;
+export default function Greeting({ name }) {
+  let isMorning = new Date().getHours() < 12;
+  return isMorning ? (
+    <>
+      <h3>Good Morning {name}</h3>
+    </>
+  ) : (
+    <h3>Good Evening {name}</h3>
+  );
+}

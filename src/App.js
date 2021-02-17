@@ -1,13 +1,26 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Greeting from "./Greeting";
+import PeopleList from "./PeopleList";
+
+const people = [
+  {
+    name: "mobin",
+    age: 20,
+    hairColor: "black",
+  },
+  {
+    name: "amir",
+    age: 19,
+    hairColor: "black",
+  },
+];
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Greeting />
-        <img src={logo} className="App-logo" alt="logo" />
+        <Greeting name="hello" />
+        <PeopleList people={people} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
