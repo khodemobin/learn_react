@@ -1,6 +1,7 @@
 import "./App.css";
 import Greeting from "./Greeting";
 import PeopleList from "./PeopleList";
+import CounterButton from "./CounterButton";
 
 const people = [
   {
@@ -21,17 +22,8 @@ function App() {
       <header className="App-header">
         <Greeting name="hello" />
         <PeopleList people={people} />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+        <CounterButton />
       </header>
     </div>
   );
